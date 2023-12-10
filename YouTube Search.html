@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>YouTube Search</title>
+  <link rel="icon" type="image/png" href="https://cdn3.iconfinder.com/data/icons/social-network-30/512/social-06-512.png">
+  
+  <style>
+    body {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 40vh;
+      margin: 0;
+	  background-color: #212121
+    }
+
+    #search-container {
+      text-align: center;
+	  width: 25%;
+    }
+
+    #search-bar {
+      padding: 10px;
+      font-size: 16px;
+	  width: 75%;
+	  border-radius: 12px;
+    }
+
+    #search-button {
+      padding: 10px 15px;
+      font-size: 16px;
+	  border-radius: 12px;
+    }
+  </style>
+</head>
+<body>
+
+  <div id="search-container">
+    <a href="https://youtube.com"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/54/YouTube_dark_logo_2017.svg/2560px-YouTube_dark_logo_2017.svg.png" alt="YouTube Logo" height="60"></a>
+    <br><br>
+    <form action="https://www.youtube.com/results" method="get" target="_blank">
+      <input type="text" id="search-bar" name="search_query" placeholder="Search on YouTube" required>
+      <button type="submit" id="search-button">Search</button>
+    </form>
+  </div>
+
+  <script>
+    // Focus the search bar on page load
+    window.onload = function() {
+      document.getElementById('search-bar').focus();
+    };
+  </script>
+
+</body>
+</html>
